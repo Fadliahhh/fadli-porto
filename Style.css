@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+
+/* Keseluruhan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: inline;
+}
+
+h1,
+h2,
+p {
+    mix-blend-mode: difference;
+}
+
+/* Body */
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: 3000px;
+}
+
+/* Navigasi */
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 60px;
+    z-index: 5;
+    line-height: 60px;
+    padding: auto;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    border-bottom: 1px #0081C9;
+}
+
+.logo {
+    display: flex;
+    font-size: 35px;
+    font-weight: 800;
+    color: #0081C9;
+    cursor: pointer;
+}
+
+b {
+    font-size: 42px;
+    color: #FFC93C;
+    text-shadow: 1px 1px 3px #915700;
+}
+nav .navigasi {
+    display: flex;
+    z-index: 999;
+    gap: 3rem;
+}
+
+nav .navigasi li {
+    list-style: none;
+}
+
+
+
+nav .navigasi a {
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #0081C9;
+    letter-spacing: 1px;
+}
+
+nav .navigasi  a::after {
+    content: '';
+    display: block;
+    padding-bottom: 3px;
+    border-bottom: 0.1rem solid #0081C9;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+
+}
+
+nav .navigasi a:hover::after {
+    transform: scaleX(0.5);
+}
+
+
+.navigasi li:hover a,
+.sosial-media a:hover {
+    color: #FFC93C;
+}
+
+.sosial-media a {
+    font-size: 25px;
+    margin: 25px 10px;
+    color: #0081C9;
+    padding: auto;
+}
+
+/* Landing page */
+
+.kumpulan {
+    width: 100%;
+    min-width: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+.kumpulan .content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: left;
+    align-items: center;
+    padding-left: 6rem;
+    padding-top: 7rem;
+
+    overflow: hidden;
+}
+
+
+
+.kata.pertama{
+    width:50%;
+    margin-bottom: 20%;
+    padding-right: 69px;
+}
+
+.pertama {
+    width: 65%;
+}
+
+.tulisanAtas {
+    display: block;
+    position: relative;
+    font-size: 50px;
+    color: #0081C9;
+    letter-spacing: 3px;
+    mix-blend-mode: difference;
+}
+
+h1 {
+    display: block;
+    font-size: 4em;
+    font-weight: 900;
+    color: #5BC0F8;
+    mix-blend-mode: difference;
+}
+
+.multiteks {
+    color: #FFC93C ;
+    text-transform: capitalize;
+}
+
+.kata.pertama p{
+    display: block;
+    width: 100%;
+    font-size: 1.1em;
+    color: #0081C9;
+    padding-right: 2rem;
+    text-align: justify;
+}
+
+.image {
+    display: flex;
+    width: 35%;
+    left: 70%;
+    top: 10%;
+}
+
+.foto {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5.2rem;    
+}
+
+.foto img {
+    position: relative;
+    height: 100%;
+    width: calc(110% - 80px);
+    align-content: center;
+    left: 100px;
+}
+
+.foto #tekstur {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    width: 147%;   
+}
+
+/* ABOUT */
+
+.about {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about p {
+    text-align: center;
+    line-height: 30px;
+    color: #0081C9;
+    font-size: 1.2rem;
+
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #0081C9;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #FFC93C;
+}
+
+h2 b {
+    color: #FFC93C;
+}
+
+.about .content-about1 {
+    text-align: right;
+    margin-top: 40px;
+    right: 0%;
+    padding: 1rem;
+    padding-left: 30rem;
+}
+
+.about .content-about1 p {
+    text-align: right;
+    color: #0081C9;
+    font-size: 1.2rem;
+}
+
+.about .content-about2 {
+    text-align: left;
+    margin-top: 40px;
+    left: 0%;
+    padding: 1rem;
+    padding-right: 30rem;
+}
+
+.about .content-about2 p {
+    text-align: left;
+    color: #0081C9;
+    font-size: 1.2rem;
+}
+
+.about .content-about3 {
+    text-align: right;
+    margin-top: 40px;
+    right: 0%;
+    padding: 1rem;
+    padding-left: 30rem;
+}
+
+.about .content-about3 p {
+    text-align: right;
+    color: #0081C9;
+    font-size: 1.2rem;
+}
+
+.harus span {
+    font-style: italic;
+    color: #FFC93C;
+}
+
+
+#hamburger{
+    display: none;
+}
+
+/* Kontak */
+
+.kontak {
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    background-image: url('Asset2/5587462.png');
+    background-size: cover;
+    z-index: 999;
+    
+}
+
+.kontak h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #0081C9;
+    z-index: 999;
+}
+
+.kontak p {
+    text-align: center;
+    line-height: 30px;
+    color: #0081C9;
+    font-size: 1.2rem;
+}
+
+.kontak .row form {
+    flex: 1 1 45rem;
+    padding: 3rem 30rem;
+    text-align: center;    
+}
+
+.kontak .row form .input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: white;
+    border: 1.6px solid #0081C9;
+    border-radius: 1rem;
+    padding: 1.3rem;
+}
+
+.kontak .row form .input-container i {
+    color: #0081C9;
+}
+
+.kontak .row form  .input-container input {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    text-align: left;
+    padding-left: 10px;
+    color: #0081C9;
+}
+
+.kontak .row form .kirim {
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border: 1.6px solid #FFC93C;
+    border-radius: 1rem;
+    color: #0081C9;
+    font-style: oblique;
+    cursor: pointer;
+    
+}
+
+.kontak .row form .kirim:hover {
+    color: #fff;
+    background-color: #0081C9;
+}
+
+.kontak .row form .pesan {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: white;
+    border: 1.6px solid #0081C9;
+    border-radius: 1rem;
+    padding: 1.3rem;
+}
+
+.kontak .row form .pesan textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    text-align: left;
+    padding-left: 10px;
+    color: #0081C9;
+}
+
+/* ASIDE Biodata */
+
+aside {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+}
+
+
+
+.biodata h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #0081C9;
+    z-index: 999;
+}
+
+aside section {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+figure img {
+    width: 10%;
+}
+
+table {
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+table th {
+    color: #0081C9;
+}
+
+table td {
+    padding-left: 2rem ;
+    color: #0081C9;
+}
+
+
+
+
+/* Tekstur - Tekstur */
+
+header .tekstur1 img {
+    position: absolute;
+    z-index: -10;
+    width: 25%;
+    left: -14rem;
+    top: 8%;
+    
+}
+
+
+header .tekstur3 img {
+    position: absolute;
+    z-index: -10;
+    width: 40%;
+    left: -20%;
+    bottom: -50%;
+}
+
+.about .tekstur1 img {
+    position: absolute;
+    z-index: -10;
+    width: 40%;
+    right: 0%;
+    rotate: 100deg;
+}
+
+.about .tekstur2 img {
+    position: absolute;
+    z-index: -10;
+    width: 30%;
+    left: 0%;
+    rotate: 240deg;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 1rem;
+    background-color: #0081C9;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+/* MEDIA QUERIS */
+
+/* TABLET */
+
+@media (max-width: 780px) {
+    #hamburger {
+        display: inline;
+    }
+
+    .navigasi {
+        position: absolute;
+        top: 7%;
+        right: -100%;
+        background-color: white;
+        box-shadow: 0px 0px 20px -2px #0081C9;
+        border-radius: 5px;
+        width: 10rem;
+        height: 18rem;
+        z-index: 100;
+        transition: 0.3s;
+    }
+
+    .navigasi.active {
+        right: 0%;
+        display: block;
+    }
+
+
+    .image {
+        display: none;
+    }
+
+    .kata.pertama{
+        padding: 1rem;
+        width: 70%;
+    }
+    .kata.pertama p{
+        justify-content: center;
+        padding: 1rem;
+        width: 80%;
+        align-items: center;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .about {
+        padding: 1rem;
+    }
+
+    .about .content-about1 {
+        text-align: right;
+        margin-top: 40px;
+        right: 0%;
+        padding: 1rem;
+    }
+
+    .about .content-about2 {
+        text-align: left;
+        margin-top: 40px;
+        left: 0%;
+        padding: 1rem;
+    }
+    
+    .about .content-about3 {
+        text-align: right;
+        margin-top: 40px;
+        right: 0%;
+        padding: 1rem;
+    }
+
+    .kontak .row form {
+        width: 100%;
+        padding: 3rem 5rem;
+        text-align: center;    
+    }
+
+    .kontak::after {
+        height: 360%;
+    }
+
+
+
+}
+
+
+/* HANDPHONE */
+
+@media (max-width: 500px) {
+    .kumpulan .content {
+        padding: 1rem;
+        width: 50%;
+        align-items: start;
+        padding-top: 30px;
+    }
+
+    .kata.pertama {
+        width: 100%;
+        padding: 1rem;
+        padding-right: 1rem;
+        text-align: left;
+    }
+
+    .kata.pertama p{
+        width: 100%;
+        padding: 1rem;
+        padding-right: 1rem;
+        text-align: left;
+    }
+
+    nav b {
+        font-size: 20px;
+    }
+    
+    
+    h1 {
+        font-size: 2.4rem;
+        padding-bottom: 3rem;
+    }
+    
+    .konten .content p {
+        font-size: 1.5rem;
+    }
+    
+    
+    body {
+        font-size: 100%;
+    }
+
+    .about{
+        padding-top: 50px;
+    }
+    .kontak .row form {
+        width: 100%;
+        padding: 3rem 3rem;
+        text-align: center;    
+    }
+}
+
+
+
+/* Gambar Tekstur */
+
+
+
+
